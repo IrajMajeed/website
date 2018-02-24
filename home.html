@@ -11,16 +11,33 @@ body{background-color: Lightgrey}
     /*background-color: rgb(0, 191, 255);*/
 }
 
+
 ul {
     list-style-type: none;
     margin: 0;
-    
+    padding: 0;
     overflow: hidden;
-    background-color:LightSalmon ;
+    background-color: lightsalmon ;
 }
 
 li {
     float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #F1948A;
+}
+
+.active {
+    background-color: green;
 }
 
 li a, .dropbtn {
@@ -32,7 +49,7 @@ li a, .dropbtn {
     font-size: 22;
 }
 h1
-{color:lightSalmon;
+{color:lightsalmon;
 background-color:maroon;
 
 }
@@ -70,25 +87,38 @@ text-decoration: none;
 margin:0px;
 }
 .mySlides {display:none;}
-/*/////////////////////*/
-.helparea { width: 630px; padding: 15px; margin: 0 auto; }
 
-div   { color: #000000; font: 12px arial, sans-serif; font-weight: normal; }
+/*dropdown*/
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #F1948A;
+}
 
-.title    { color: #000000; font: 14px arial, sans-serif; font-weight: bold; }
+li.dropdown {
+    display: inline-block;
+}
 
-.hilite   { color: #66FF00; }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightsalmon;
+    min-width: 105px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
 
-a:link    { color: #0066FF; text-decoration: none; }
+.dropdown-content a {
+    color: white;
+    padding: 9px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-a:visited { color: #0066FF; text-decoration: none; }
+.dropdown-content a:hover {background-color: #f1f1f1}
 
-a:active  { color: #0066FF; text-decoration: none; }
-
-a:hover   { color: #FF9900; text-decoration: none; }
-
-.textareacode { font: 12px arial, sans-serif; font-weight: normal; width: 580px; background-color:#F0F0F0; border: #000000 1px solid; }
-
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 </style>
 
 </head>
@@ -120,7 +150,7 @@ a:hover   { color: #FF9900; text-decoration: none; }
 <img src="UET.jpg" height="280 px" width="1350 px" align="middle">
 
 </div>
- --><div class="a" >
+ --><div class="a">
     <br>
 <h1 style="background-color:maroon; text-align:center; margin-bottom: 0px;" >ScanEye</h1>
 
@@ -128,12 +158,16 @@ a:hover   { color: #FF9900; text-decoration: none; }
 
 <div >
 <ul position="fixed";>
-  
-  <li  ><a href="army.html" target="blank">ARMY</li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">HOME</a>
+    <div class="dropdown-content">
+      <a href="#">Mission</a>
+      <a href="#">Video</a>
+      
+  <li  ><a href="army.html" target="blank">ARMY</a></li>
   <li><a href="hospital.html" target="blank">HOSPITAL</a></li>
 <li><a href="aboutus.html" target="blank">ABOUT US</a></li>
 </div>
-</a>
 </li>
 </ul>
 <div class="floating-box" style="margin-top: 45px;">

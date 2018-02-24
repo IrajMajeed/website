@@ -11,13 +11,29 @@ body{background-color: Lightgrey}
 ul {
     list-style-type: none;
     margin: 0;
-    
+    padding: 0;
     overflow: hidden;
-    background-color:LightSalmon ;
+    background-color: lightsalmon ;
 }
 
 li {
     float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #F1948A;
+}
+
+.active {
+    background-color: green;
 }
 
 li a, .dropbtn {
@@ -29,7 +45,7 @@ li a, .dropbtn {
     font-size: 22;
 }
 h1
-{color:lightSalmon;
+{color: lightsalmon ;
 
 
 }
@@ -111,8 +127,8 @@ margin:0px;
 
 <div >
 <ul position="fixed";>
-  
-  <li  ><a href="army.html" target="blank">ARMY</li>
+  <li  ><a href="home.html" target="blank">HOME</a></li>
+  <li  ><a href="army.html" target="blank">ARMY</a></li>
   <li><a href="hospital.html" target="blank">HOSPITAL</a></li>
 <li><a href="aboutus.html" target="blank">ABOUT US</a></li>
 </div>
