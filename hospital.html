@@ -2,49 +2,51 @@
 <head>
 <title>Hospital Information </title>
 <link rel="stylesheet" href="news_scroll.css" type="text/css">
-<style>
-body{background-color: Lightgrey}
-
-#home {
-    width: 26px;
-    height: 24px;
-    background: url(img_navsprites.gif) 0 0;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
-    overflow: hidden;
-    background-color:rgb(0, 191, 255);
-}
-
-li {
-    float: left;
-}
-
-li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 22;
-}
-
-</style>
+<link href="print.css" rel="stylesheet" type="text/css" media="print"> 
+<link href="home.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 
 <body>
+<div class="noPrint">
+<div>
+ <img style="margin-top: 0px" src="uu.png" height="150 px" width="200 px" align="right">
+
+<img style="margin-top: 0px" height="150 px" width="300 px" align="left" src="ss.png" >
+</div>
+<br><br>
+ <h4 style="text-align: center;"> PERSONAL INFORMATION FORM </h4>
+<br><br><br><br><br><br><br><br><br><br>
+ <form  action="https://www.google.com.pk/?gws_rd=cr&ei=usUpWKnsOcz0UpaRtpAJ" method="post"><br/><br/> 
+<label  class="iraj" for="Ptient ID" > <b>Patient ID: <b></label> 
+ <input style="margin-left: 20px"  type="text" name="patient ID" required="required" /> </br> </br>  
+<label class="iraj" for="Height" > <b>Height: <b></label> 
+<input style="margin-left: 43px" type="text" name="Height" required="required" /> </br> </br> 
+
+<label class="iraj" for="Weight" > <b>Weight: <b></label> 
+<input style="margin-left: 42px"  type="text" name="Weight" required="required" /> </br> </br> 
+
+<label class="iraj" for="BMI Ratio" > <b>BMI Ratio: <b></label> 
+<input style="margin-left: 19px" type="text" name="BMI Ratio" required="required" /> </br> </br> 
+
+<label class="iraj" for="Pulse Rate" > <b>Pulse Rate: <b></label> 
+<input style="margin-left: 20px" type="text" name="Pulse Rate" required="required" /> </br> </br>
+
+<label class="iraj" for="Picture" > <b>Picture: <b></label> 
+<input  style="margin-left: 42px" type="text" name="Picture" required="required" /> </br> </br> 
+</form>
+</div>
+
+<div class="nodisplay" style="background-color: lightgrey">
 
 <div class="a">
 
-<img src="gg.jpeg" height="290 px" width="1334 px" align="middle">
+<img style="margin-left: 5px" src="gg.jpeg" height="290 px" width="1334 px" align="center">
 
 </div>
 
-<div>
+
 <div >
-<ul position="fixed";>
+<ul position="fixed" ; style="margin-left: 5px; margin-right: 10px" >
  <li> <a href="home.html" target="blank">
 <img id="home" src="img.png"></a></li>
   <li  ><a href="https://www.youtube.com" target="blank">Personal Information</a></li>
@@ -53,43 +55,47 @@ li a, .dropbtn {
 </ul>
 </div>
 
+<div class="row">
+  <div class="column left" style="background-color: lightgrey">
+    <form  action="https://www.google.com.pk/?gws_rd=cr&ei=usUpWKnsOcz0UpaRtpAJ" method="post"><br/><br/>
+<label  class="iraj" for="Ptient ID" > <b>Patient ID: </b></label>  
+<input style="margin-left: 20px" type="text" name="patient ID" required="required" /> </br> </br>  
+<!-- </from> -->
+<label class="iraj" for="Height" > <b>Height: </b></label> 
+<input style="margin-left: 43px" type="text" name="Height" required="required" /> </br> </br> 
 
-<form style="margin-top: 0px" action="">
-User Id :<br>
-<input type="text" name="userid">
-<br>
+<label class="iraj" for="Weight" > <b>Weight: </b></label> 
+<input style="margin-left: 42px" type="text" name="Weight" required="required" /> </br> </br> 
+
+<label class="iraj" for="BMI Ratio" > <b>BMI Ratio: </b></label> 
+<input style="margin-left: 19px" type="text" name="BMI Ratio" required="required" /> </br> </br> 
+
+<label class="iraj" for="Pulse Rate" > <b>Pulse Rate: </b></label> 
+<input style="margin-left: 20px" type="text" name="Pulse Rate" required="required" /> </br> </br>
+
+<label class="iraj" for="Picture" > <b>Picture: </b></label> 
+<input style="margin-left: 42px" type="text" name="Picture" required="required" /> </br> </br> 
+ 
+
 </form>
-<div id="news_iframe_scroll">
+
+  </div>
+  <div class="column right" style="background-color: lightgrey">
+    <div id="news_iframe_scroll">
 <div class="news_scroll-title">
 News and Updates<br>
 </div>
 <iframe name="NewsIFrame" src="news_scroll.html" frameborder="0" scrolling="no"></iframe>
 </div>
 <!-- END SCROLLING NEWS WINDOW SAMPLE -->
-<!-- <form  action="https://www.google.com.pk/?gws_rd=cr&ei=usUpWKnsOcz0UpaRtpAJ" method="post"><br/><br/> -->
-<!-- <label  class="iraj" for="Ptient ID" > <b>Patient ID: <b></label>  -->
-<!-- <input  type="text" name="patient ID" required="required" /> </br> </br>  -->
-<!-- </from> -->
-<!-- <label class="iraj" for="Height" > <b>Height: <b></label> 
-<input  type="text" name="Height" required="required" /> </br> </br> 
 
-<label class="iraj" for="Weight" > <b>Weight: <b></label> 
-<input  type="text" name="Weight" required="required" /> </br> </br> 
-
-<label class="iraj" for="BMI Ratio" > <b>BMI Ratio: <b></label> 
-<input  type="text" name="BMI Ratio" required="required" /> </br> </br> 
-
-<label class="iraj" for="Pulse Rate" > <b>Pulse Rate: <b></label> 
-<input  type="text" name="Pulse Rate" required="required" /> </br> </br>
-
-<label class="iraj" for="Picture" > <b>Picture: <b></label> 
-<input  type="text" name="Picture" required="required" /> </br> </br> 
- -->
-
-
+  </div>
+</div>
 
 
 </div>
+
+
 
 </body>
 </html>
