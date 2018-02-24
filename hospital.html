@@ -3,6 +3,13 @@
 <title>Hospital Information </title>
 <link rel="stylesheet" href="news_scroll.css" type="text/css">
 <style>
+body{background-color: Lightgrey}
+
+#home {
+    width: 26px;
+    height: 24px;
+    background: url(img_navsprites.gif) 0 0;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -30,18 +37,28 @@ li a, .dropbtn {
 <body>
 
 <div class="a">
+
 <img src="gg.jpeg" height="290 px" width="1334 px" align="middle">
 
 </div>
+
 <div>
 <div >
 <ul position="fixed";>
-  
-  <li  ><a href="https://www.youtube.com" target="blank">Personal Information</li>
+ <li> <a href="home.html" target="blank">
+<img id="home" src="img.png"></a></li>
+  <li  ><a href="https://www.youtube.com" target="blank">Personal Information</a></li>
   <li><a href="https://www.youtube.com" target="blank">Prescriptions</a></li>
 
 </ul>
 </div>
+
+
+<form style="margin-top: 0px" action="">
+User Id :<br>
+<input type="text" name="userid">
+<br>
+</form>
 <div id="news_iframe_scroll">
 <div class="news_scroll-title">
 News and Updates<br>
@@ -49,11 +66,11 @@ News and Updates<br>
 <iframe name="NewsIFrame" src="news_scroll.html" frameborder="0" scrolling="no"></iframe>
 </div>
 <!-- END SCROLLING NEWS WINDOW SAMPLE -->
-<form  action="https://www.google.com.pk/?gws_rd=cr&ei=usUpWKnsOcz0UpaRtpAJ" method="post"><br/><br/>
-<label  class="iraj" for="Ptient ID" > <b>Patient ID: <b></label> 
-<input  type="text" name="patient ID" required="required" /> </br> </br> 
-
-<label class="iraj" for="Height" > <b>Height: <b></label> 
+<!-- <form  action="https://www.google.com.pk/?gws_rd=cr&ei=usUpWKnsOcz0UpaRtpAJ" method="post"><br/><br/> -->
+<!-- <label  class="iraj" for="Ptient ID" > <b>Patient ID: <b></label>  -->
+<!-- <input  type="text" name="patient ID" required="required" /> </br> </br>  -->
+<!-- </from> -->
+<!-- <label class="iraj" for="Height" > <b>Height: <b></label> 
 <input  type="text" name="Height" required="required" /> </br> </br> 
 
 <label class="iraj" for="Weight" > <b>Weight: <b></label> 
@@ -67,11 +84,11 @@ News and Updates<br>
 
 <label class="iraj" for="Picture" > <b>Picture: <b></label> 
 <input  type="text" name="Picture" required="required" /> </br> </br> 
+ -->
 
 
 
 
-</form>
 </div>
 
 </body>
