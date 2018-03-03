@@ -57,10 +57,42 @@
 
 <div class="row">
   <div class="column left" style="background-color: lightgrey">
-     <div style="text-align: center">
-        <form class="even" action="hos.php" method="post">
-            <p><b>Enter you ID Number:</b> </p>
-            <label class="iraj" for=" User Name" > <b>ID No <b></label> 
+     <div>
+        <form class="even" action=".php" method="process">
+            <p><b>Login:</b> </p>
+            <label class="iraj" for=" User Name" > <b>idd <b></label>
+            <?php
+$id= $_POST['id'];
+$id = stripcslashes($id);
+$id = mysql_real_escape_string($id);
+// Create connection"
+$con = mysql_connect("localhost", "root","");
+mysql_select_db("fyp");
+// Check connection
+
+ 
+$query = mysql_query("SELECT * FROM `info` where id='$id'") or die("failed to querry databse".mysql_error());
+$row= mysql_fetch_array($query);
+if($row['id']== $id)
+{    
+  $array = $row;
+    echo  $row["id"];
+ 
+echo "<h4>height  :</h4> ";
+echo $row["height"];
+ 
+echo ""."<h4>Weight :</h4> ";
+echo $row["weight"];
+echo""."<h4>BMI Ratio :</h4> ";
+echo $row["bmi"];
+echo""."<h4>Pulse Rate :</h4> ";
+echo $row["pulse"];
+echo""."<h4>Picture :</h4> ";
+echo $row["pic"];
+
+ 
+}
+?>  
             <input  type="text" name="id" required="required" /> </br> </br></br>
             
             <!-- <input type="submit" value="Submit" /> -->
@@ -68,7 +100,7 @@
     </div> 
  
 
-
+</form>
 
   </div>
   <div class="column right" style="background-color: lightgrey">
